@@ -37,7 +37,12 @@ console.log();
 // Enunciado:
 // Crea un array llamado estudiantes que contenga tres objetos. Cada objeto debe representar un estudiante con las propiedades: nombre, edad, y notaFinal. Luego, recorre el array e imprime el nombre y la nota final de cada estudiante.
 console.log('Ejercicio 4:');
-
+const estudiantes = [
+  { nombre: 'Peter', edad: 16, notaFinal: 7, },
+  { nombre: 'Pepper', edad: 14, notaFinal: 3, },
+  { nombre: 'Bob', edad: 18, notaFinal: 9, },
+];
+estudiantes.forEach(estudiante => Object.values(estudiante).forEach(value => console.log(value)));
 console.log();
 
 // 5. Método para calcular la edad
