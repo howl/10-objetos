@@ -114,7 +114,16 @@ console.log();
 // Enunciado:
 // Crea un objeto empresa que tenga las propiedades nombre y direccion. La propiedad direccion debe ser otro objeto con calle, ciudad, y codigoPostal. Luego, accede a las propiedades del objeto anidado e imprímelas.
 console.log('Ejercicio 9:');
-
+const empresa = {
+  nombre: 'Error 404: Company Not Found',
+  direccion: {
+    calle: 'Falsa',
+    ciudad: 'Inventada',
+    codigoPostal: 28080,
+  },
+};
+for (const propiedad in empresa.direccion)
+  console.log(`${propiedad}: ${empresa.direccion[propiedad]}`);
 console.log();
 
 // 10. Añadir métodos a objetos
