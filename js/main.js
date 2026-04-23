@@ -2,7 +2,13 @@
 // Enunciado:
 // Crea un objeto persona que tenga las propiedades: nombre, edad, y ciudad. Luego, imprime cada propiedad por separado en la consola.
 console.log('Ejercicio 1:');
-
+const persona = {
+  nombre: 'Charlie Brown',
+  edad: 27,
+  ciudad: 'Despeñaperros',
+}
+for (let propiedad in persona)
+  console.log(propiedad);
 console.log();
 
 // 2. Modificar propiedades
