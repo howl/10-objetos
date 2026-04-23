@@ -15,7 +15,9 @@ console.log();
 // Enunciado:
 // A partir del objeto persona anterior, cambia el valor de la propiedad ciudad y añade una nueva propiedad llamada profesión. Luego, imprime el objeto actualizado en la consola.
 console.log('Ejercicio 2:');
-
+persona.ciudad = 'Algarrabastro de Todos los Santos';
+persona.profesion = 'Descapullador de monos';
+console.log(persona);
 console.log();
 
 // 3. Objeto Libro
