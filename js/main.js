@@ -24,7 +24,13 @@ console.log();
 // Enunciado:
 // Crea un objeto llamado libro con las propiedades titulo, autor, y añoPublicacion. Añade un método llamado resumen que devuelva una cadena con un resumen del libro. Ejemplo de salida: "El libro 'Cien años de soledad' fue escrito por Gabriel García Márquez en 1967."
 console.log('Ejercicio 3:');
-
+const libro = {
+  titulo: '¿Ya llegamos? Guía para padres impacientes',
+  autor: 'Padre del año',
+  anioPublicacion: 2023,
+  resumen: function () { console.log(`El libro '${this.titulo}' fue escrito por ${this.autor} en ${this.anioPublicacion}.`) },
+}
+libro.resumen();
 console.log();
 
 // 4. Array de objetos
