@@ -86,7 +86,12 @@ console.log();
 // Enunciado:
 // Crea un objeto producto con las propiedades nombre, precio, cantidad. Usa un ciclo for...in para imprimir todas las propiedades y sus valores.
 console.log('Ejercicio 7:');
-
+const producto = {
+  nombre: 'Alubias en bote',
+  precio: 2.40,
+  cantidad: 3,
+}
+for (const key in producto) console.log(`Propiedad: ${key}\nValor: ${producto[key]}`);
 console.log();
 
 // 8. Contar propiedades
