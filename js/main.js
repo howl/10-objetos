@@ -63,7 +63,23 @@ console.log();
 // Enunciado:
 // Crea un objeto llamado coche con las propiedades marca, modelo, año y velocidadActual. Añade un método acelerar que incremente la velocidad actual en 10 unidades y otro método frenar que disminuya la velocidad actual en 10 unidades. Asegúrate de que la velocidad no sea negativa.
 console.log('Ejercicio 6:');
-
+const coche = {
+  marca: 'Aston Martin',
+  modelo: 'DB-9',
+  anio: 2006,
+  velocidadActual: 0,
+  acelerar: function () {
+    this.velocidadActual += 10;
+  },
+  frenar: function () {
+    this.velocidadActual = Math.max(this.velocidadActual - 10, 0);
+  },
+};
+console.log(coche.velocidadActual);
+for (i = 0; i < 10; i++) coche['acelerar']();  // Probando acceso a método mediante corchetes.
+console.log(coche.velocidadActual);
+for (i = 0; i < 100; i++) coche.frenar();
+console.log(coche.velocidadActual);
 console.log();
 
 // 7. Recorrer un objeto
