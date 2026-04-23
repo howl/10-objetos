@@ -49,7 +49,14 @@ console.log();
 // Enunciado:
 // Crea un objeto persona con las propiedades nombre, anioNacimiento, y un método llamado calcularEdad que devuelva la edad actual de la persona basado en el año de nacimiento.
 console.log('Ejercicio 5:');
-
+const persona2 = {
+  nombre: 'Anaís',
+  anioNacimiento: '1993',
+  calcularEdad: function () {
+    return new Date().getFullYear() - this.anioNacimiento;
+  },
+};
+console.log(persona2.calcularEdad());
 console.log();
 
 // 6. Objeto Coche
