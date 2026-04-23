@@ -130,5 +130,24 @@ console.log();
 // Enunciado:
 // Crea un objeto cuentaBancaria con las propiedades titular, saldo. Añade métodos depositar y retirar que modifiquen el saldo según sea necesario. El método retirar debe asegurarse de que no se pueda retirar más dinero del que hay disponible.
 console.log('Ejercicio 10:');
-
+const cuentaBancaria = {
+  titular: 'Amancio',
+  saldo: 64838.63,
+  depositar: function (dinero) {
+    this.saldo += dinero;
+    return `Dinero ingresado, tu saldo actual es ${this.saldo} €`;
+  },
+  retirar: function (dinero) {
+    if (dinero <= this.saldo) {
+      // A la hora de restar da resultados como 14838.630000000005 por la precisión de javascript, así que redondeo
+      this.saldo = Math.round((this.saldo - dinero) * 100) / 100;
+      return `Dinero retirado, tu saldo actual es ${this.saldo} €\nNo olvides cogerlo (si eres argentino no hagas guarradas) y retirar tu tarjeta`;
+    }
+    else
+      return '¿Qué creíste? Eres Amancio pero no Ortega.'
+  },
+};
+console.log(cuentaBancaria.retirar(100000.00));
+console.log(cuentaBancaria.depositar(50000.00));
+console.log(cuentaBancaria.retirar(100000.00));
 console.log();
