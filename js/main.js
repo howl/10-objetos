@@ -98,7 +98,16 @@ console.log();
 // Enunciado:
 // Crea un objeto animal con al menos cinco propiedades. Luego, escribe una función que cuente y devuelva el número de propiedades que tiene el objeto.
 console.log('Ejercicio 8:');
-
+const animal = {
+  nombre: 'Tigre',
+  nombreCientifico: 'Gattus Peligrosus de la Selva',
+  peso: 134,
+  esCarnivoro: true,
+  velocidadMaxima: 76,
+  habitat: 'Selva',
+};
+const numPropiedades = elemento => Object.keys(elemento).length;
+console.log(`El objeto tiene ${numPropiedades(animal)} propiedades`);
 console.log();
 
 // 9. Objeto dentro de otro objeto
