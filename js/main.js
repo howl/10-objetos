@@ -7,7 +7,7 @@ const persona = {
   edad: 27,
   ciudad: 'Despeñaperros',
 }
-for (let propiedad in persona)
+for (const propiedad in persona)
   console.log(propiedad);
 console.log();
 
@@ -76,9 +76,9 @@ const coche = {
   },
 };
 console.log(coche.velocidadActual);
-for (i = 0; i < 10; i++) coche['acelerar']();  // Probando acceso a método mediante corchetes.
+for (let i = 0; i < 10; i++) coche['acelerar']();  // Probando acceso a método mediante corchetes.
 console.log(coche.velocidadActual);
-for (i = 0; i < 100; i++) coche.frenar();
+for (let i = 0; i < 100; i++) coche.frenar();
 console.log(coche.velocidadActual);
 console.log();
 
